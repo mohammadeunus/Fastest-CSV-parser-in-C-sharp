@@ -41,6 +41,21 @@ Here are the processing times for each CSV parser (in seconds) based on multiple
     - Run 2: 4.4059097 seconds
     - Run 3: 3.824507 seconds
 
+
+### CSV Parser Performance Comparison
+
+![CSV Parser Performance Chart](/ConsoleApp1/CsvFiles/averageProcessingTime.png)
+
+This chart shows the average processing time (in seconds) for different CSV parsing libraries:
+
+- **Sylvia**: Average time: 2.7145544 seconds
+- **RecordParser**: Average time: 3.93789245 seconds
+- **csvHelper**: Average time: 4.26318675 seconds
+- **StringSplit**: Average time: 4.92723545 seconds
+- **SoftCircuitsCsvParser**: Average time: 8.56197 seconds
+
+(Note: The actual times may vary based on your system and dataset.)
+
 These results indicate that the "Sylvia CSV Parser" is consistently the fastest among the tested libraries, with the lowest processing times.
 
 ## Conclusion
