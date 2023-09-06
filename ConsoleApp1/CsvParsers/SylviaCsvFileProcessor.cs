@@ -7,7 +7,7 @@ public class SylviaCsvFileProcessor : IBaseProcessor
 {
     public void ProcessCsvFile(string filePath, string outputFilePath)
     {
-        // Configure options (e.g., delimiter, encoding, etc.).
+        // Configure options
         var options = new CsvDataReaderOptions
         {
             // Tells Sylvan to split the CSV file into columns based on commas
@@ -16,7 +16,7 @@ public class SylviaCsvFileProcessor : IBaseProcessor
 
         using (var reader = CsvDataReader.Create(filePath, options))
 
-        // Create a StreamWriter for writing to the output file
+        // StreamWriter for writing to the output file
         using (var writer = new StreamWriter(outputFilePath))
         {
             // Read and process the CSV data row by row.

@@ -8,7 +8,7 @@ public class StringSplitFileProcessor : IBaseProcessor
 {
     public void ProcessCsvFile(string filePath, string outputFilePath)
     {
-        char delimiter = ','; // Assuming the delimiter in your CSV file is a comma.
+        char delimiter = ',';  
 
         using var reader = new StreamReader(filePath);
         using var writer = new StreamWriter(outputFilePath);
@@ -27,8 +27,7 @@ public class StringSplitFileProcessor : IBaseProcessor
 
             if (columns.Length < 9)
             {
-                // Handle cases where the CSV file does not have enough columns.
-                Console.WriteLine($"Invalid line: {line}");
+                // skips lines where the CSV file does not have enough columns.
                 continue;
             }
 

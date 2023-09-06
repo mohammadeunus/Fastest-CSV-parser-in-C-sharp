@@ -22,8 +22,7 @@ public class CsvHelperCsvFileProcessor : IBaseProcessor
                 csv.Context.RegisterClassMap<CsvRecordMap>();
                 var data = csv.GetRecords<CsvRecord>();
 
-                // Write the header row to the output file (optional).
-                // csvWriter.WriteRecords(new[] { new CsvRecord { Column1 = "Column1", Column2 = "Column2", Column3 = "Column3" } });
+                // Write the header row to the output file (optional). 
 
                 foreach (var record in data)
                 {

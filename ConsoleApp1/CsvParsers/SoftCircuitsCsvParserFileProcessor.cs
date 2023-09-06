@@ -26,7 +26,8 @@ internal class SoftCircuitsCsvParserFileProcessor : IBaseProcessor
                 string? column7Founded = reader.Columns?[6];
                 string? column8Industry = reader.Columns?[7];
                 string? column9NofEmployee = reader.Columns?[8];
- 
+
+                // Format the data as needed and write it to the output file.
                 string formattedData = $"Index: {column1Index}, Organization id: {column2OrganizationId}, Name: {column3Name}, " +
                     $"Website: {column4Website}, Country: {column5Country}, Description: {column6Description}, Founded: {column7Founded}, " +
                     $"Industry: {column8Industry}, NofEmployee: {column9NofEmployee}";
