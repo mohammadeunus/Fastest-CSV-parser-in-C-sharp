@@ -4,6 +4,9 @@ using Fastest_CSV_parser;
 //dictionary to store the processing time of each csv file parser
 Dictionary<string, double> recordsOfCsvProcessing = new Dictionary<string, double>();
 
+var SylviaCsvProcessingTime = new CalculateDuration().returnProcessingTime(new SylviaCsvFileProcessor());
+recordsOfCsvProcessing.Add("sylvia", SylviaCsvProcessingTime);
+
 
 var SoftCircuitsCsvParserProcessingTime = new CalculateDuration().returnProcessingTime(new SoftCircuitsCsvParserFileProcessor());
 recordsOfCsvProcessing.Add("SoftCircuitsCsvParser", SoftCircuitsCsvParserProcessingTime);
@@ -11,8 +14,6 @@ recordsOfCsvProcessing.Add("SoftCircuitsCsvParser", SoftCircuitsCsvParserProcess
 var csvHelperProcessingTime = new CalculateDuration().returnProcessingTime(new CsvHelperCsvFileProcessor());
 recordsOfCsvProcessing.Add("csvHelper", csvHelperProcessingTime);
 
-var SylviaCsvProcessingTime = new CalculateDuration().returnProcessingTime(new SylviaCsvFileProcessor());
-recordsOfCsvProcessing.Add("sylvia", SylviaCsvProcessingTime);
 
 
 var StringSplitProcessingTime = new CalculateDuration().returnProcessingTime(new StringSplitFileProcessor());
