@@ -1,7 +1,3 @@
-Here's a GitHub README file that explains the comparison of different CSV parsers in terms of processing time:
-
----
-
 # CSV Parser Comparison
 
 This project aims to compare the performance of various CSV parsers in C# by measuring the time it takes to process a CSV file. We have used five different CSV parsers: Sylvia, SoftCircuitsCsvParser, CsvHelper, StringSplit, and RecordParser. The goal is to find the fastest CSV parser for your specific use case.
